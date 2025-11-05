@@ -1,13 +1,13 @@
 
 <configuration>
-    <!-- 控制台输出 -->
+    <!-- console output-->
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
             <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
         </encoder>
     </appender>
 
-    <!-- 文件输出 -->
+    <!-- file output -->
     <appender name="FILE" class="ch.qos.logback.core.FileAppender">
         <file>logs/application.log</file>
         <encoder>
@@ -15,12 +15,12 @@
         </encoder>
     </appender>
 
-    <!-- 根日志级别 -->
+    <!-- root logger -->
     <root level="DEBUG">
         <appender-ref ref="CONSOLE"/>
         <appender-ref ref="FILE"/>
     </root>
 
-    <!-- 特定包日志级别 -->
+    <!-- package logger -->
     <logger name="net.daodao" level="DEBUG"/>
 </configuration>
