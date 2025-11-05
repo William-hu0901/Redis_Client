@@ -34,7 +34,7 @@
             <version>${commons-pool2.version}</version>
         </dependency>
 
-        <!-- Lombok核心 -->
+        <!-- Lombok -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
